@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Segment Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock-title">
+            <h1>DIGITAL CHRONOMETER</h1>
+            <div class="subtitle">7-SEGMENT DISPLAY</div>
+        </div>
+        <div class="digital-clock">
+            <!-- Hours -->
+            <div class="digit-container">
+                <div class="digit" id="hour1"></div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="hour2"></div>
+            </div>
+
+            <!-- Colon -->
+            <div class="colon">
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <!-- Minutes -->
+            <div class="digit-container">
+                <div class="digit" id="minute1"></div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="minute2"></div>
+            </div>
+
+            <!-- Colon -->
+            <div class="colon">
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <!-- Seconds -->
+            <div class="digit-container">
+                <div class="digit" id="second1"></div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="second2"></div>
+            </div>
+        </div>
+        <div class="clock-info">
+            <div class="info-item">
+                <span class="label">LOCAL TIME</span>
+                <span class="value" id="timezone"></span>
+            </div>
+            <div class="info-item">
+                <span class="label">FORMAT</span>
+                <span class="value">24H</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
